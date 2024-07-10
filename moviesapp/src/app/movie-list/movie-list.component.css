@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .movie-tile {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 200px;
+    position: relative;
+  }
+  
+  .rating .star {
+    color: gold;
+  }
+  
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  

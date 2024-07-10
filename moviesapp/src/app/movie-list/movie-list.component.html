@@ -1,0 +1,11 @@
+<p>movie-list works!</p>
+<div class="movie-tile" *ngFor="let movie of movies">
+    <img [src]="movie.image" alt="{{ movie.title }}">
+    <h3>{{ movie.title }}</h3>
+    <p>{{ movie.genre }}</p>
+    <p>{{ movie.year }}</p>
+    <div class="stars">
+      <span *ngFor="let star of getStars(movie.rating)">★</span>
+    </div>
+    <button (click)="deleteMovie(movie.id)">Delete</button>
+  </div>
